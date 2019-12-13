@@ -25,7 +25,33 @@
         padding: 10px;
         text-align: center;
         background: #191919;
-        border-radius: 15px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      #header h1 {
+        font-size: 40px;
+      }
+
+      #navbar {
+        overflow: hidden;
+        background-color: #333333;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      #navbar a {
+        float: left;
+        display: block;
+        color: White;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+      #navbar a.right {
+        float: right;
+      }
+      #navbar a:hover {
+        background-color: #00b8e6;
+        color: black;
       }
     </style>
   </head>
@@ -36,12 +62,10 @@
     </div>
 
     <!--Quick links to different parts of the website-->
-    <div id="links">
-      <ul>
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-      </ul>
+    <div id="navbar">
+      <a href="#aboutme">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
     </div>
 
     <!--Short bio about me-->
@@ -61,6 +85,15 @@
       <h2>Projects</h2>
       <ul>
         <li>
+          <h3>Closed Files Determiner</h3>
+          <p>Fall 2019</p>
+          <p>I used Windows Form App development in C# to create a program to use data from Excel
+            spreadsheets to determine which files closed with Home Abstract & Title Company and
+            which files did not. This program was an independent effort to help improve the speed
+            and quality of performance reports used by the CEO of Home Abstract & Title Company.</P>
+          <a href="https://github.com/BuschEric97/HatcoFilesClosedDeterminer" target="_blank">Project Repository</a>
+        </li>
+        <li>
           <h3>Password Generator App</h3>
           <p>Spring 2019</p>
           <p>I used the cross-platform framwork "Flutter" to create a mobile app that generates
@@ -68,14 +101,6 @@
             this <a href="https://youtu.be/Pe_3cFuSw1E" target="_blank">video</a> by Numberphile
             on YouTube.</p>
           <a href="https://github.com/BuschEric97/password_generator" target="_blank">Project Repository</a>
-        </li>
-        <li>
-          <h3>Closed Files Determiner</h3>
-          <p>Fall 2019</p>
-          <p>I used Windows Form App development in C# to create a program to use data from Excel
-            spreadsheets to determine which files closed with Home Abstract & Title Company and
-            which files did not. This program was an independent effort to help improve the speed
-            and quality of performance reports used by the CEO of Home Abstract & Title Company.</P>
         </li>
         <li>
           <h3>Location Based Social Media Website</h3>
@@ -96,7 +121,7 @@
     <!--Link to a copy of my resume hosted on Google drive-->
     <div id="resume">
       <h2>Resume</h2>
-      <a href="https://drive.google.com/open?id=1Bs1qcvTCIer1UcHxngXQ0t7_vBmFpNb8" target="_blank">
+      <a href="./Resume_EricBusch.pdf" target="_blank">
         Resume_EricBusch.pdf
       </a>
     </div>
