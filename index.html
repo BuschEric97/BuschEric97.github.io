@@ -66,6 +66,38 @@
         background-color: #4d4d4d;
         padding: 10px;
       }
+
+      .repolink {
+        background-color: #333333;
+        color: DodgerBlue;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        padding: 7px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .repolink:visited {color: DodgerBlue;}
+      .repolink:hover {
+        background-color: #00b8e6;
+        color: black;
+      }
+
+      .resumelink {
+        background-color: #333333;
+        color: DodgerBlue;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .resumelink:visited {color: DodgerBlue;}
+      .resumelink:hover {
+        background-color: #00b8e6;
+        color: black;
+      }
     </style>
   </head>
 
@@ -99,7 +131,7 @@
         <!--Descriptions of different projects I have worked on both acedemic or otherwise-->
         <div id="projects">
           <h2>Projects</h2>
-          <ul>
+          <ul class="projectlist">
             <li>
               <h3>Closed Files Determiner</h3>
               <p>Fall 2019</p>
@@ -107,7 +139,7 @@
                 spreadsheets to determine which files closed with Home Abstract & Title Company and
                 which files did not. This program was an independent effort to help improve the speed
                 and quality of performance reports used by the CEO of Home Abstract & Title Company.</P>
-              <a href="https://github.com/BuschEric97/HatcoFilesClosedDeterminer" target="_blank">Project Repository</a>
+              <a href="https://github.com/BuschEric97/HatcoFilesClosedDeterminer" target="_blank" class="repolink">Project Repository</a>
             </li>
             <li>
               <h3>Password Generator App</h3>
@@ -116,14 +148,14 @@
                 passwords given user specified parameters. The password generation is based off of
                 this <a href="https://youtu.be/Pe_3cFuSw1E" target="_blank">video</a> by Numberphile
                 on YouTube.</p>
-              <a href="https://github.com/BuschEric97/password_generator" target="_blank">Project Repository</a>
+              <a href="https://github.com/BuschEric97/password_generator" target="_blank" class="repolink">Project Repository</a>
             </li>
             <li>
               <h3>This Website</h3>
               <p>Fall 2019</p>
               <p>I am using this website as a tool to learn HTML/CSS and other frontend web development
                 languages and frameworks. Additionally, this website serves as a companion to my resume.</p>
-              <a href="https://github.com/BuschEric97/BuschEric97.github.io" target="_blank">Project Repository</a>
+              <a href="https://github.com/BuschEric97/BuschEric97.github.io" target="_blank" class="repolink">Project Repository</a>
             </li>
             <li>
               <h3>Location Based Social Media Website</h3>
@@ -145,9 +177,7 @@
         <br>
         <div id="resume">
           <h2>Resume</h2>
-          <a href="./Resume_EricBusch.pdf" target="_blank">
-            Resume_EricBusch.pdf
-          </a>
+          <a href="./Resume_EricBusch.pdf" target="_blank" class="resumelink">Resume_EricBusch.pdf</a>
         </div>
       </div>
     </div>
