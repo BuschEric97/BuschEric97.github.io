@@ -11,6 +11,7 @@
       body {
         background-color: #252525;
         font-family: sans-serif;
+        margin: 0;
       }
       h1 {color: Gainsboro;}
       h2 {color: GhostWhite;}
@@ -21,24 +22,20 @@
       a:hover {color: DeepSkyBlue;}
       a:active {color: DeepSkyBlue;}
 
-      #header {
+      .header {
         padding: 10px;
         text-align: center;
         background: #191919;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
       }
-      #header h1 {
+      .header h1 {
         font-size: 40px;
       }
 
-      #navbar {
+      .navbar {
         overflow: hidden;
         background-color: #333333;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
       }
-      #navbar a {
+      .navbar a {
         float: left;
         display: block;
         color: White;
@@ -46,84 +43,104 @@
         padding: 14px 20px;
         text-decoration: none;
       }
-      #navbar a.right {
+      .navbar a.right {
         float: right;
       }
-      #navbar a:hover {
+      .navbar a:hover {
         background-color: #00b8e6;
         color: black;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+      .leftside {
+        flex: 1;
+        background-color: #404040;
+        padding: 20px;
+      }
+      .main {
+        flex: 3;
+        background-color: #4d4d4d;
+        padding: 20px;
       }
     </style>
   </head>
 
   <body>
-    <div id="header">
+    <div class="header">
       <h1>Eric Busch</h1>
     </div>
-
     <!--Quick links to different parts of the website-->
-    <div id="navbar">
-      <a href="#aboutme">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
+    <div class="navbar">
+      <a href="https://www.linkedin.com/in/eric-busch-1105/" class="right" target="_blank">LinkedIn</a>
     </div>
 
-    <!--Short bio about me-->
-    <div id="aboutme">
-      <h2>About Me</h2>
-      <img src="./ProfilePic_HairDown.jpg" width="25%" height="25%" />
-      <p>Hi, I'm Eric Busch! I am studying computer science at The University of Texas at Dallas.
-        I know many programming languages such as C/C++, Java, C#, and Python among others.
-        I am constantly looking to learn more and to expand my knowledge.<br><br> Beyond computer
-        science my hobbies include making origami, playing video games, and watching anime. I am
-        currently studying Japanese as a second language and I hope to become fluent before too long.
-        <br><br> I hope you enjoy my website and thank you for visiting!</p>
-    </div>
+    <div class="row">
+      <div class="leftside">
+        <!--Short bio about me-->
+        <div id="aboutme">
+          <h2>About Me</h2>
+          <img src="./ProfilePic_HairDown.jpg" width="100%">
+          <p>Hi, I'm Eric Busch! I am studying computer science at The University of Texas at Dallas.
+            I know many programming languages such as C/C++, Java, C#, and Python among others.
+            I am constantly looking to learn more and to expand my knowledge.<br><br> Beyond computer
+            science my hobbies include making origami, playing video games, and watching anime. I am
+            currently studying Japanese as a second language and I hope to become fluent before too long.
+            <br><br> I hope you enjoy my website and thank you for visiting!</p>
+        </div>
+      </div>
 
-    <!--Descriptions of different projects I have worked on both acedemic or otherwise-->
-    <div id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <h3>Closed Files Determiner</h3>
-          <p>Fall 2019</p>
-          <p>I used Windows Form App development in C# to create a program to use data from Excel
-            spreadsheets to determine which files closed with Home Abstract & Title Company and
-            which files did not. This program was an independent effort to help improve the speed
-            and quality of performance reports used by the CEO of Home Abstract & Title Company.</P>
-          <a href="https://github.com/BuschEric97/HatcoFilesClosedDeterminer" target="_blank">Project Repository</a>
-        </li>
-        <li>
-          <h3>Password Generator App</h3>
-          <p>Spring 2019</p>
-          <p>I used the cross-platform framwork "Flutter" to create a mobile app that generates
-            passwords given user specified parameters. The password generation is based off of
-            this <a href="https://youtu.be/Pe_3cFuSw1E" target="_blank">video</a> by Numberphile
-            on YouTube.</p>
-          <a href="https://github.com/BuschEric97/password_generator" target="_blank">Project Repository</a>
-        </li>
-        <li>
-          <h3>Location Based Social Media Website</h3>
-          <p>Spring 2019</p>
-          <p>I collaborated with a team to create a new social media website that pins threads to
-            locations much like leaving a physical note somewhere. I worked on the backend development
-            of the website while others worked on the frontend.</p>
-        </li>
-        <li>
-          <h3>Reversi in MIPS Assembly</h3>
-          <p>Fall 2017</p>
-          <p>I collaborated with a team to program the game Reversi in MIPS assembly language. I acted as
-            the project lead and also wrote a significant portion of the code.</p>
-        </li>
-      </ul>
-    </div>
+      <div class="main">
+        <!--Descriptions of different projects I have worked on both acedemic or otherwise-->
+        <div id="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              <h3>Closed Files Determiner</h3>
+              <p>Fall 2019</p>
+              <p>I used Windows Form App development in C# to create a program to use data from Excel
+                spreadsheets to determine which files closed with Home Abstract & Title Company and
+                which files did not. This program was an independent effort to help improve the speed
+                and quality of performance reports used by the CEO of Home Abstract & Title Company.</P>
+              <a href="https://github.com/BuschEric97/HatcoFilesClosedDeterminer" target="_blank">Project Repository</a>
+            </li>
+            <li>
+              <h3>Password Generator App</h3>
+              <p>Spring 2019</p>
+              <p>I used the cross-platform framwork "Flutter" to create a mobile app that generates
+                passwords given user specified parameters. The password generation is based off of
+                this <a href="https://youtu.be/Pe_3cFuSw1E" target="_blank">video</a> by Numberphile
+                on YouTube.</p>
+              <a href="https://github.com/BuschEric97/password_generator" target="_blank">Project Repository</a>
+            </li>
+            <li>
+              <h3>Location Based Social Media Website</h3>
+              <p>Spring 2019</p>
+              <p>I collaborated with a team to create a new social media website that pins threads to
+                locations much like leaving a physical note somewhere. I worked on the backend development
+                of the website while others worked on the frontend.</p>
+            </li>
+            <li>
+              <h3>Reversi in MIPS Assembly</h3>
+              <p>Fall 2017</p>
+              <p>I collaborated with a team to program the game Reversi in MIPS assembly language. I acted as
+                the project lead and also wrote a significant portion of the code.</p>
+            </li>
+          </ul>
+        </div>
 
-    <!--Link to a copy of my resume hosted on Google drive-->
-    <div id="resume">
-      <h2>Resume</h2>
-      <a href="./Resume_EricBusch.pdf" target="_blank">
-        Resume_EricBusch.pdf
-      </a>
+        <!--Link to a copy of my resume hosted on Google drive-->
+        <div id="resume">
+          <h2>Resume</h2>
+          <a href="./Resume_EricBusch.pdf" target="_blank">
+            Resume_EricBusch.pdf
+          </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
