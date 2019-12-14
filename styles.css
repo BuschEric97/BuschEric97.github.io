@@ -3,9 +3,9 @@ body {
   margin: 0;
 }
 h1 {color: #1a1a1a;}
-h2 {color: GhostWhite;}
-h3 {color: GhostWhite;}
-p {color: White}
+h2 {color: White;}
+h3 {color: White;}
+p {color: White;}
 a:link {color: DodgerBlue;}
 a:visited {color: DarkOrchid;}
 a:hover {color: DeepSkyBlue;}
@@ -36,6 +36,25 @@ a:active {color: DeepSkyBlue;}
   float: right;
 }
 .navbar a:hover {
+  background-color: #00b8e6;
+  color: black;
+}
+
+.togglebuttons {
+  overflow: hidden;
+  background-color: #3a3a3a;
+}
+.togglebuttons button {
+  float left;
+  display: block;
+  background-color: #3a3a3a;
+  border: none;
+  color: White;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.togglebuttons button:hover {
   background-color: #00b8e6;
   color: black;
 }

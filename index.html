@@ -8,10 +8,30 @@
     <meta name="author" content="Eric David Busch">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <script>
+      var isDark = "t";
+      function toggleDark() {
+        if (isDark == "t") {
+          document.querySelectorAll("h2").forEach(element => {element.style.color = "#000000";});
+          document.querySelectorAll("h3").forEach(element => {element.style.color = "#000000";});
+          document.querySelectorAll("p").forEach(element => {element.style.color = "#000000";});
+          document.getElementById("leftside").style.background = "#e6e6e6";
+          document.getElementById("main").style.background = "#f2f2f2"
+          isDark = "f";
+        } else {
+          document.querySelectorAll("h2").forEach(element => {element.style.color = "#ffffff";});
+          document.querySelectorAll("h3").forEach(element => {element.style.color = "#ffffff";});
+          document.querySelectorAll("p").forEach(element => {element.style.color = "#ffffff";});
+          document.getElementById("leftside").style.background = "#404040";
+          document.getElementById("main").style.background = "#4d4d4d";
+          isDark = "t";
+        }
+      }
+    </script>
   </head>
 
-  <body>
-    <div class="header">
+  <body id="body">
+    <div class="header" id="header">
       <h1>Eric Busch</h1>
     </div>
     <!--Quick links to different parts of the website-->
@@ -20,9 +40,12 @@
       <a href="https://github.com/BuschEric97" class="right" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/eric-busch-1105/" class="right" target="_blank">LinkedIn</a>
     </div>
+    <div class="togglebuttons">
+      <button onclick="toggleDark();">Toggle Dark Mode</button>
+    </div>
 
     <div class="row">
-      <div class="leftside">
+      <div class="leftside" id="leftside">
         <!--Short bio about me-->
         <div id="aboutme">
           <h2>About Me</h2>
@@ -36,7 +59,7 @@
         </div>
       </div>
 
-      <div class="main">
+      <div class="main" id="main">
         <!--Descriptions of different projects I have worked on both acedemic or otherwise-->
         <div id="projects">
           <h2>Projects</h2>
