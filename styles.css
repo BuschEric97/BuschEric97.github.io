@@ -92,6 +92,9 @@ a:active {color: DeepSkyBlue;}
   .main {
     flex: initial;
   }
+  .youtube {
+    width: 100%;
+  }
 }
 
 .repolink {
