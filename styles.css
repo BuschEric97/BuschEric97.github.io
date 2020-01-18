@@ -92,6 +92,9 @@ a:active {color: DeepSkyBlue;}
   .main {
     flex: initial;
   }
+  .youtube {
+    width: 100%;
+  }
 }
 
 .repolink {
@@ -122,6 +125,22 @@ a:active {color: DeepSkyBlue;}
 }
 .resumelink:visited {color: DodgerBlue;}
 .resumelink:hover {
+  background-color: #00b8e6;
+  color: black;
+}
+
+.hobbylink {
+  background-color: #333333;
+  color: DodgerBlue;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  padding: 7px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hobbylink:visited {color: DodgerBlue;}
+.hobbylink:hover {
   background-color: #00b8e6;
   color: black;
 }
