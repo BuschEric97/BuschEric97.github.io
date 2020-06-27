@@ -1,5 +1,4 @@
 function toggleDark(isDark) {
-    alert("in toggleDarkHome.js/toggleDark(isDark=" + isDark + ")");
     if (isDark == "t") {
         document.querySelectorAll("h2").forEach(element => {element.style.color = "#000000";});
         document.querySelectorAll("h3").forEach(element => {element.style.color = "#000000";});
