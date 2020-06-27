@@ -23,9 +23,7 @@ function setDarkCookie(darkValue, expireDays) {
     var expires = "expires=" + date.toUTCString();
 
     // set the cookie with the new values
-    document.cookie = cName + "=" + darkValue;
-    document.cookie = expires;
-    document.cookie = "path=/";
+    document.cookie = cName + "=" + darkValue + ";" + expires;
 }
 
 // delete the cookie named cName
