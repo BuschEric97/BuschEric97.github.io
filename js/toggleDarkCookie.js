@@ -42,7 +42,7 @@ function checkDarkCookie() {
 function toggleDarkCookie() {
     checkDarkCookie(); // check that cookie exists
     var cookie = getDarkCookie(); // get current value of cookie
-
+    alert(cookie);
     // switch the current cookie value to it's opposite
     if (cookie == "t") {
         setDarkCookie("f", 365);
