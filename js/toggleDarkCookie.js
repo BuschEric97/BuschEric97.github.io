@@ -9,7 +9,7 @@ function getDarkCookie() {
             cookie = cookie.substring(1);
         }
         if (cookie.indexOf(cName) == 0) { // if current checked cookie is cName
-            return cookie.substring(cName.length, cookie.length); // return value of cookie
+            return cookie.substring(cName.length+1, cookie.length); // return value of cookie
         }
     }
     return ""; // return nothing if cookie doesn't exist
@@ -42,7 +42,7 @@ function checkDarkCookie() {
 function toggleDarkCookie() {
     checkDarkCookie(); // check that cookie exists
     var cookie = getDarkCookie(); // get current value of cookie
-    alert(cookie);
+
     // switch the current cookie value to it's opposite
     if (cookie == "t") {
         setDarkCookie("f", 365);
