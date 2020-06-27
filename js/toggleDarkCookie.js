@@ -2,9 +2,7 @@ var cName = "darkCookie"; // name of the cookie that specifies if user wants dar
 
 // get the current stored value of the cookie named cName
 function getDarkCookie() {
-    alert("in getDarkCookie()");
     var cookies = document.cookie.split(";"); // get all cookies
-    alert("cookies=" + cookies.toString());
     for (var i = 0; i < cookies.length; i++) {
         cookie = cookies[i]; // get current checked cookie
         while (cookie.charAt(0) == " ") { // get rid of leading spaces
@@ -19,7 +17,6 @@ function getDarkCookie() {
 
 // set the current stored value of the cookie named cName
 function setDarkCookie(darkValue, expireDays) {
-    alert("in setDarkCookie()");
     // set the expire date to a day in the past
     var date = new Date();
     date.setTime(date.getTime() + (expireDays * 24 * 60 * 60 * 1000));
@@ -29,18 +26,15 @@ function setDarkCookie(darkValue, expireDays) {
     document.cookie = cName + "=" + darkValue;
     document.cookie = expires;
     document.cookie = "path=/";
-    alert("document.cookie=" + document.cookie);
 }
 
 // delete the cookie named cName
 function deleteDarkCookie() {
-    alert("in deleteDarkCookie()");
     setDarkCookie("t", -1);
 }
 
 // check if the cookie named cName exists. If not, create it
 function checkDarkCookie() {
-    alert("in checkDarkCookie()");
     var cookie = getDarkCookie(); // get current value of cookie
     if (cookie == "") { // if current value of cookie is empty, create a new one
         setDarkCookie("t", 365);
@@ -48,11 +42,8 @@ function checkDarkCookie() {
 }
 
 function toggleDarkCookie() {
-    alert("in toggleDarkCookie()");
     checkDarkCookie(); // check that cookie exists
     var cookie = getDarkCookie(); // get current value of cookie
-
-    alert("darkCookie=" + cookie);
 
     // switch the current cookie value to it's opposite
     if (cookie == "t") {
